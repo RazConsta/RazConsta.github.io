@@ -5,71 +5,111 @@
   <title>Raz Consta - Personal Website</title>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--Favicon-->
   <link rel="shortcut icon"
     href="https://imagensemoldes.com.br/wp-content/uploads/2018/03/Robin-Logo-Simples-Vetor-e-PNG.png" />
 
   <style>
+    /* Default text is white, background is dark grey. */
     body {
       background-color: #333333;
       color: white;
     }
 
+    /* Turning off dark mode. */
     .dark-mode {
       background-color: white;
       color: black;
     }
 
+    /* Centered unordered list. */
     ul {
       text-align: center;
-      list-style: inside;
     }
 
+    /* Unknown. *Figure out what this means. */
     .center {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+
+    /* Max width of body set at 800px. */
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
   </style>
 </head>
 
-<body>
+<body class="content">
 
-  <button onclick="myFunction()">Toggle dark mode</button>
+  <br>
 
+  <!--Centered button.-->
+  <div style="text-align: center;">
+    <button onclick="myFunction()">Click here to toggle dark mode.</button>
+  </div>
+
+  <br>
+
+  <!--Image of the W with hyperlink to UWT webpage.-->
   <a href="https://www.tacoma.uw.edu/">
-
     <img src="https://www.thenewstribune.com/news/local/x33t4r/picture126537319/alternates/FREE_1140/uwt"
       alt="Failed to load image..." width="500" height="400" class="center" style="max-width:100%;height:auto;">
-
   </a>
 
   <h1 style=" font-size:30px;text-align:center;">About me</h1>
 
+  <!--Intro paragraph with link to UW's CSS program.-->
   <p style="text-align:center;">I am a <b> rising sophomore </b> at University of Washington Tacoma
     majoring with a
     <a href="https://www.tacoma.uw.edu/set/computer-science-systems-home" target="_blank"
       title="Click here for a description of the program">BS in Computer
-      Science and Systems.</a></p>
+      Science and Systems.
+    </a>
+  </p>
 
-  <p style="text-align:center;"> Here's a couple of links to my <a href="https://github.com/RazConsta" target="_blank">
-      Github </a> and <a href="https://www.linkedin.com/in/raz-consta-247b341a9/" target="_blank">
-      LinkedIn.</a> </p>
+  <!--Github and LinkedIn links. *Have to fix dark mode hyperlink color.-->
+  <p style="text-align:center;"> Here are some links to my
+    <a href="https://github.com/RazConsta" target="_blank">
+      Github
+    </a> ,
+    <a href="https://www.linkedin.com/in/raz-consta-247b341a9/" target="_blank">
+      LinkedIn
+    </a> and
+    <a href="https://1drv.ms/w/s!AiANZKJ7Tb3kgr5rwr68cQK7pmxyEw?e=Ngnab5" target="_blank">
+      resume.
+    </a>
+  </p>
 
-  <button title="If you want">Get in touch with me</button>
+  <br>
+
+  <!--Centered email me button.-->
+  <div style="text-align: center;">
+    <a HREF="mailto:razvanc@uw.edu">
+      <button title="If you want">Click here to send me an email.
+      </button>
+    </a>
+  </div>
+
   <br>
   <br>
 
-  <hr>
+  <!--Unordered list, contained in div, centered and border wrapped.-->
+  <div style="border:3px solid;margin: auto; width: 400px;">
+    <h4 style="text-align: center;">Relevant courses I have taken:</h4>
+    <ul>
+      <li>Object Oriented Programming(Java) - TCSS 143</li>
+      <li>Calculus 4 - TMATH 324</li>
+      <li>Differential Equations - TMATH 307</li>
+      <li>Matrix Algebra - TMATH 308</li>
+    </ul>
+  </div>
 
-  <!--Find a way to align the buleted list to center-->
-  <h4 style="text-align: center;">Relevant courses I have taken:</h4>
-  <ul style="border:3px solid;">
-    <li>Object Oriented Programming(Java) - CSS 143</li>
-    <li>Calculus 4 - MATH 324</li>
-    <li>Differential Equations - MATH 307</li>
-    <li>Matrix Algebra - MATH 308</li>
-  </ul>
+  <br>
 
+  <!--Script that toggles dark mode.-->
   <script>
     function myFunction() {
       var element = document.body;
