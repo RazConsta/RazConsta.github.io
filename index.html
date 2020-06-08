@@ -7,31 +7,52 @@
 
   <link rel="shortcut icon"
     href="https://imagensemoldes.com.br/wp-content/uploads/2018/03/Robin-Logo-Simples-Vetor-e-PNG.png" />
-    
+
   <style>
-    h1 {
-      color: blue;
-    }
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color:#333333;
+  color: white;
+}
+
+h1 {
+  color: blue;
+}
+
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
   </style>
 </head>
 
 <body>
 
+  <button onclick="myFunction()">Toggle dark mode</button>
+
   <a target="_blank" href="https://www.tacoma.uw.edu/">
 
     <a href="https://www.thenewstribune.com/news/local/x33t4r/picture126537319/alternates/FREE_1140/uwt">
       <img src="https://www.thenewstribune.com/news/local/x33t4r/picture126537319/alternates/FREE_1140/uwt"
-        alt="Failed to load image..." width="500" height="400">
+        alt="Failed to load image..." width="500" height="400" class="center">
     </a>
   </a>
 
   <h1 style="font-size:30px;text-align:center;">About me</h1>
 
-  <p style="text-align:center;">I am a <b>rising sophomore</b> at University of Washington Tacoma
-    majoring with a <del>BA in Pshychology</del>
+  <p style="text-align:center;">I am a <b> rising sophomore </b> at University of Washington Tacoma
+    majoring with a <del> BA in Pshychology </del>
     <a href="https://www.tacoma.uw.edu/set/computer-science-systems-home" target="_blank"
       title="Click here for a description of the program"><abbr title="Bachelor of Science">BS</abbr> in Computer
       Science and Systems.</a></p>
+
+  <p style="text-align:center;"> Here's a couple of links to my <a href="https://github.com/RazConsta" target="_blank"> Github </a> and <a href="https://www.linkedin.com/in/raz-consta-247b341a9/" target="_blank"> LinkedIn.</a> </p>
 
   <button title="If you want">Get in touch with me</button>
   <br>
@@ -48,6 +69,13 @@
     <li>Matrix Algebra - MATH 308</li>
   </ul>
 
+  <script>
+    function myFunction()
+    {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 
 </html>
