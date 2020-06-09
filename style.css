@@ -1,0 +1,84 @@
+/* Selector + Declarations(Property + Value) */
+
+div,
+h1,
+h4,
+p,
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+
+/* White text, dark grey background. */
+
+body {
+    background-color: #333333;
+    color: white;
+    /*
+        background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+          */
+}
+
+
+/* Rounded border. */
+
+.border {
+    border-radius: 20px;
+    border: 3px solid;
+    margin: auto;
+    width: 450px;
+}
+
+
+/* Centered unordered list. */
+
+ul {
+    text-align: center;
+}
+
+
+/* Turning off dark mode. */
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+
+/* Unknown. *Figure out what this means. */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Max width of body set at x px. */
+
+body {
+    /* max-width: 600px; */
+    margin: auto;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-color: yellow;
+}
+
+#main {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: #333333;
+}
+
+#backg {
+    background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
