@@ -4,50 +4,66 @@ div,
 h1,
 h4,
 p,
+ul,
 footer {
     text-align: center;
 }
+
+body {
+    /* background-color: #333333; */
+    background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg); 
+    background-size: cover;
+    /* border-left: 10px solid;
+    border-right: 10px solid;
+    border-color: yellow; */
+    background-attachment: fixed;
+    /* color: white; */
+    margin: auto;
+}
+
+/* Fixing links for dark mode. */
+
+a {
+    color:white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+
+#firstDiv {
+    background-color: #333333;
+    color: white;
+    margin: auto;
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+
 
 h1 {
     font-size: 30px;
 }
 
 
-/* White text, dark grey background. */
-
-body {
-    background-color: #333333;
-    color: white;
-    /*
-        background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-          */
-}
-
-
 /* Rounded border. */
 
 .border {
-    border-radius: 20px;
     border: 3px solid;
+    border-radius: 20px;
     margin: auto;
-    width: 450px;
+    width: auto;
 }
 
-
-/* Centered unordered list. */
-
-ul {
-    text-align: center;
-}
-
-
-/* Turning off dark mode. */
-
-.dark-mode {
-    background-color: white;
-    color: black;
+#fourthDiv {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -59,26 +75,6 @@ ul {
     margin-right: auto;
 }
 
-
-/* Max width of body set at x px. */
-
-body {
-    /* max-width: 600px; */
-    margin: auto;
-    border-left: 10px solid;
-    border-right: 10px solid;
-    border-color: yellow;
-}
-
-#main {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    background-color: #333333;
-}
-
-#backg {
-    background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.hidden {
+    display: none;
 }
