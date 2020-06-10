@@ -20,8 +20,18 @@
 
 </head>
 
+<!--Implement a position: sticky; navigation bar.-->
+
 <body>
     <div id="firstDiv">
+
+        <ul id="navBar">
+            <li class="navItems active"><a href="#home">Home</a></li>
+            <li class="navItems"><a href="#about">About me</a></li>
+            <li class="navItems"><a href="#projects">Personal Projects</a></li>
+            <li class="navItems"><a href="#resume">Resume</a></li>
+        </ul>
+
         <br>
 
         <!--Centered button.-->
@@ -106,7 +116,7 @@
                 var x = document.getElementsByTagName("a");
 
                 for (var i = 0; i < x.length; i++)
-                    x[i].style.color="black";
+                    x[i].style.color = "black";
             }
             else {
                 document.getElementById("firstDiv").style.backgroundColor = "#333333";
@@ -114,11 +124,26 @@
                 var x = document.getElementsByTagName("a");
 
                 for (var i = 0; i < x.length; i++)
-                    x[i].style.color="white";
+                    x[i].style.color = "white";
 
             }
 
         }
+    </script>
+
+<script>
+    window.onscroll = function() {stickyBar()};
+    
+    var navbar = document.getElementById("navBar");
+    var sticky = navbar.offsetTop;
+    
+    function stickyBar() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
     </script>
 
     <noscript>Sorry, your browser does not support JavaScript!</noscript>

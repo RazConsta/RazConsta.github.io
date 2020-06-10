@@ -1,17 +1,12 @@
 /* Selector + Declarations(Property + Value) */
 
-div,
-h1,
-h4,
-p,
-ul,
-footer {
+div, h1, h4, p, ul, footer {
     text-align: center;
 }
 
 body {
     /* background-color: #333333; */
-    background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg); 
+    background-image: url(https://cdn.hipwallpaper.com/i/55/11/QoJ6dT.jpg);
     background-size: cover;
     /* border-left: 10px solid;
     border-right: 10px solid;
@@ -24,11 +19,76 @@ body {
 /* Fixing links for dark mode. */
 
 a {
-    color:white;
+    color: white;
     background-color: transparent;
     text-decoration: underline;
+}
+
+/* Dark mode and email buttons. */
+
+button {
+    background-color: yellow;
+    border-color: yellow;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+/* Navigation bar. */
+
+#navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky; 
+    overflow: hidden;
+    background-color: blueviolet;
+    display: inline-block; /* centers the bar */
+} 
+ 
+/* Navigation bar items. */
+
+.navItems {
+    float: left;
+}
+
+/* Used in sticky bar script. */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
-  
+
+/* Padding to prevent quick movement. */
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.navItems a {
+    display: block;
+  /* color: white; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:active) {
+    color: black;
+  }
+
+.navItems a:hover {
+    background-color: yellow;
+    color:black;
+}
+
+.active {
+    background-color: yellow;
+    color: black;
+  }
+
+/* Div that contains everything. */
 
 #firstDiv {
     background-color: #333333;
@@ -37,7 +97,6 @@ a {
     max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    text-align: center;
 }
 
 .dark-mode {
@@ -45,12 +104,9 @@ a {
     color: black;
 }
 
-
-
 h1 {
     font-size: 30px;
 }
-
 
 /* Rounded border. */
 
@@ -61,11 +117,12 @@ h1 {
     width: auto;
 }
 
+/* Relevant courses list. */
+
 #fourthDiv {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 
 /* Unknown. *Figure out what this means. */
 
