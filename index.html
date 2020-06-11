@@ -1,3 +1,14 @@
+<!--To do list:
+    1) Sticky navigation bar.
+    2) Centered navbar even after scrolling.
+    3) Navigation bar active page higlight.
+    4) Dark mode on active page.
+    5) Remember dark mode preference when switching pages.
+    6) No shadow on button borders.
+    7) Preload images.
+    8) Dark mode toggle.
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -19,11 +30,8 @@
 
 </head>
 
-<!--Implement a position: sticky; navigation bar.-->
-
 <body>
     <div id="firstDiv">
-
         <nav>
             <ul id="navBar">
                 <li class="navItems"><a style="padding: 3px 4px;"><img src="images/favicon.ico" width="30px"
@@ -41,7 +49,9 @@
         <div>
             <button onclick="myFunction()">Click here to toggle dark mode.</button>
         </div>
+
         <br>
+
         <img src="images/profile.jfif" alt="profile" style="border-radius: 50%; width: 200px;">
         <br>
         <h1>Hi, I'm Raz Consta</h1>
@@ -51,6 +61,7 @@
             demos and
             actual code. Without further ado, feel free to browse using the top navigation bar.
         </p>
+
         <!--Centered email me button.-->
         <div>
             <a href="mailto:razvanc@uw.edu">
@@ -58,12 +69,15 @@
                 </button>
             </a>
         </div>
+
         <br>
+
         <footer>© 2020 Raz Consta</footer>
+
         <br>
     </div>
 
-    <!--Client-side script that toggles dark mode. * Fix toggle and links.-->
+    <!--Client-side script that toggles dark mode.-->
     <script>
         function myFunction() {
             /* document.getElementById("firstDiv").classList.toggle("dark-mode"); */

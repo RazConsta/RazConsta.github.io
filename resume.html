@@ -42,38 +42,51 @@
             <button onclick="myFunction()">Click here to toggle dark mode.</button>
         </div>
 
+
+
+        <p>Here is a pdf of my <a href="resume.pdf" target="_blank">resume</a>.</p>
+
+
+        <div class="border" id="fourthDiv" style="text-align: left;">
+            <h2>Education</h2>
+            <p style="text-align: left;">University of Washington Tacoma: BS CSS and Mathematics Minor<br>
+                4.0 Cumulative GPA</p>
+
+            <!--Unordered list, contained in div, centered and border wrapped.-->
+
+
+            <h4>Relevant courses I have taken:</h4>
+            <ul>
+                <li>Object Oriented Programming(Java) - TCSS 143</li>
+                <li>Calculus 4 - TMATH 324</li>
+                <li>Differential Equations - TMATH 307</li>
+                <li>Matrix Algebra - TMATH 308</li>
+            </ul>
+        </div>
+
         <br>
 
-        <!--Image of the W with hyperlink to UWT webpage.-->
-        <a href="https://www.tacoma.uw.edu/">
-            <img src="images/uwt.jpg" alt="Failed to load image..." width="600" height="400" class="center"
-                style="max-width:100%;height:auto;">
-        </a>
+        <div class="border" id="fourthDiv" style="text-align: left;">
+            <h2>Experience</h2>
+            <p style="text-align: left;">ACCESS in STEM Scholar</p>
+            <p style="text-align: left;"> <br> Attended weekly “Achieving Change in our Communities for Equity and
+                Student Success”
+                (ACCESS) meetings focused around faculty mentoring, skills workshops, and a focus group on
+                equity and inclusion in STEM to help develop a sense of community, identity, and empowerment.
+            </p>
+        </div>
 
+        <br>
 
-        <h1>About me</h1>
-
-
-        <!--Intro paragraph with link to UW's CSS program.-->
-        <p>I am a rising sophomore at University of Washington Tacoma majoring with a
-            <a href="https://www.tacoma.uw.edu/set/computer-science-systems-home" target="_blank"
-                title="Click here for a description of the program">BS in Computer
-                Science and Systems.
-            </a>
-        </p>
-
-        <!--Github, LinkedIn and resume links. *Have to fix dark mode hyperlink color. *Fix resume link.-->
-        <p> Here are some links to my
-            <a href="https://github.com/RazConsta" target="_blank">
-                Github
-            </a> ,
-            <a href="https://www.linkedin.com/in/raz-consta-247b341a9/" target="_blank">
-                LinkedIn
-            </a> and
-            <a href="https://1drv.ms/w/s!AiANZKJ7Tb3kgr5rwr68cQK7pmxyEw?e=Ngnab5" target="_blank">
-                resume.
-            </a>
-        </p>
+        <div class="border" id="fourthDiv" style="text-align: left;">
+            <h2>Languages</h2>
+            <ul style="text-align: left;">
+                <li>Java</li>
+                <li>C++</li>
+                <li>HTML/CSS/JS</li>
+                <li>R</li>
+            </ul>
+        </div>
 
         <br>
 
@@ -86,21 +99,6 @@
         </div>
 
         <br>
-        <br>
-
-        <!--Unordered list, contained in div, centered and border wrapped.-->
-
-        <div class="border" id="fourthDiv">
-            <h4>Relevant courses I have taken:</h4>
-            <ul>
-                <li>Object Oriented Programming(Java) - TCSS 143</li>
-                <li>Calculus 4 - TMATH 324</li>
-                <li>Differential Equations - TMATH 307</li>
-                <li>Matrix Algebra - TMATH 308</li>
-            </ul>
-        </div>
-
-        <br>
 
         <footer>© 2020 Raz Consta</footer>
 
@@ -108,7 +106,7 @@
 
     </div>
 
-    <!--Client-side script that toggles dark mode. * Fix toggle and links.-->
+    <!--Client-side script that toggles dark mode.-->
     <script>
         function myFunction() {
             /* document.getElementById("firstDiv").classList.toggle("dark-mode"); */
