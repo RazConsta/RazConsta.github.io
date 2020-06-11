@@ -1,5 +1,8 @@
+/*-------------------------------------------------*/
 
-/*--------------------General----------------------*/
+/*--------------------Name-based-------------------*/
+
+/*-------------------------------------------------*/
 
 div, h1, h4, p, ul, footer {
     text-align: center;
@@ -7,7 +10,7 @@ div, h1, h4, p, ul, footer {
 
 body {
     /* background-color: #333333; */
-    background-image: url(images/seattle.jpg);
+    background-image: url(../images/seattle.jpg);
     background-size: cover;
     /* border-left: 10px solid;
     border-right: 10px solid;
@@ -35,7 +38,15 @@ button {
     padding: 2px 6px;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+/*---------------------------------------------------*/
+
 /*------------------Navigation bar-------------------*/
+
+/*---------------------------------------------------*/
 
 /* Navigation bar. */
 
@@ -43,12 +54,13 @@ button {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: sticky; 
+    position: sticky;
     overflow: hidden;
     background-color: blueviolet;
-    display: inline-block; /* centers the bar */
-} 
- 
+    display: inline-block;
+    /* centers the bar */
+}
+
 /* Navigation bar items. */
 
 .navItems {
@@ -61,39 +73,42 @@ button {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
 
-  
 /* Padding to prevent quick movement. */
 
-  .sticky + .content {
+.sticky+.content {
     padding-top: 60px;
-  }
+}
 
 .navItems a {
     display: block;
-  /* color: white; */
-  text-align: center;
-  padding: 9px 15px;
-  text-decoration: none;
-  font-family: "Segoe UI",Arial,sans-serif;
+    /* color: white; */
+    text-align: center;
+    padding: 9px 15px;
+    text-decoration: none;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 li a:active {
     color: black;
-  }
+}
 
 .navItems a:hover {
     background-color: yellow;
-    color:black;
+    color: black;
 }
 
 .active {
     background-color: yellow;
     color: black;
-  }
+}
 
-/* Div that contains everything. */
+/*-----------------------------------------------*/
+
+/*------------------body div---------------------*/
+
+/*-----------------------------------------------*/
 
 #firstDiv {
     background-color: #333333;
@@ -104,13 +119,15 @@ li a:active {
     padding-right: 20px;
 }
 
+/*----------------------------------------------*/
+
+/*-------------------Classes--------------------*/
+
+/*----------------------------------------------*/
+
 .dark-mode {
     background-color: white;
     color: black;
-}
-
-h1 {
-    font-size: 30px;
 }
 
 /* Rounded border. */
@@ -122,15 +139,6 @@ h1 {
     width: auto;
 }
 
-/* Relevant courses list. */
-
-#fourthDiv {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* Unknown. *Figure out what this means. */
-
 .center {
     display: block;
     margin-left: auto;
@@ -139,4 +147,17 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+/* Relevant courses list. */
+
+/*----------------------------------------------*/
+
+/*-----------------ID-based---------------------*/
+
+/*----------------------------------------------*/
+
+#fourthDiv {
+    padding-left: 20px;
+    padding-right: 20px;
 }
