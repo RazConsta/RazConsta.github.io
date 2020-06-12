@@ -42,6 +42,24 @@ h1 {
     font-size: 30px;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+}
+
+
+@media screen and (max-width: 2560px) {
+    #firstDiv {
+        transform: scale(1.25);
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    #firstDiv {
+        transform: scale(1);
+    }
+}
+
 /*---------------------------------------------------*/
 
 /*------------------Navigation bar-------------------*/
@@ -51,29 +69,31 @@ h1 {
 /* Navigation bar. */
 
 #navBar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    overflow: hidden;
     background-color: blueviolet;
     display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: auto;
     /* centers the bar */
 }
 
-/* Navigation bar items. */
+/* Horizontal navbar elements.. */
 
 .navItems {
     float: left;
 }
 
-/* Used in sticky bar script. */
+/* Used in sticky bar script. 
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} 
 
 /* Padding to prevent quick movement. */
 
@@ -94,7 +114,10 @@ li a:active {
     color: black;
 }
 
-.navItems a:hover {
+/* When hovering a nabar item, 
+change text to black and background to yellow. */
+
+.navItems a:hover, .navItems a:active {
     background-color: yellow;
     color: black;
 }
@@ -130,6 +153,10 @@ li a:active {
     color: black;
 }
 
+.dark-mode-links {
+    color: black;
+}
+
 /* Rounded border. */
 
 .border {
@@ -157,7 +184,20 @@ li a:active {
 
 /*----------------------------------------------*/
 
-#fourthDiv {
+#firstDiv {
+    background-color: #333333;
+    color: white;
+    margin: auto;
+    max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+#borderedDiv {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navBarLogo {
+    padding: 3px 4px;
 }

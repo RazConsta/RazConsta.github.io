@@ -1,12 +1,10 @@
 <!--To do list:
-    1) Sticky navigation bar.
-    2) Centered navbar even after scrolling.
-    3) Navigation bar active page higlight.
-    4) Dark mode on active page.
-    5) Remember dark mode preference when switching pages.
-    6) No shadow on button borders.
-    7) Preload images.
-    8) Dark mode toggle.
+    1) Dark mode on active page.
+    2) Remember dark mode preference when switching pages.
+    3) No shadow on button borders.
+    4) Preload images.
+    5) Dark mode toggle.
+    6) Set zoom based on user resolution. (hold)
 -->
 
 <!DOCTYPE html>
@@ -31,11 +29,14 @@
 
 <body>
     <div id="firstDiv">
+
+        <img src="images/seattle.jpg" style="display: none;" width="1920px" height="1080px" alt="Background">
+
         <nav>
             <ul id="navBar">
-                <li class="navItems"><a style="padding: 3px 4px;"><img src="images/favicon.ico" width="30px"
-                            height="30px"></a></li>
-                <li class="navItems"><a href="index.html">Home</a></li>
+                <li class="navItems"><a id="navBarLogo"><img src="images/favicon.ico" width="30px" height="30px"></a>
+                </li>
+                <li class="navItems"><a class="active" href="index.html">Home</a></li>
                 <li class="navItems"><a href="pages/about.html">About me</a></li>
                 <li class="navItems"><a href="pages/projects.html">Personal Projects</a></li>
                 <li class="navItems"><a href="pages/resume.html">Resume</a></li>
@@ -45,7 +46,7 @@
         <br>
 
         <div>
-            <button onclick="myFunction()">Click here to toggle dark mode.</button>
+            <button onclick="darkMode()">Click here to toggle dark mode.</button>
         </div>
 
         <br>

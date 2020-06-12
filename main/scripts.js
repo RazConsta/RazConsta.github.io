@@ -1,8 +1,11 @@
-function myFunction() {
-    /* document.getElementById("firstDiv").classList.toggle("dark-mode"); */
+function darkMode() {
 
-    // Random value decided if dark mode is toggled.
-    if (Math.floor(Math.random() * 100) % 2 == 0) {
+    document.getElementById("firstDiv").classList.toggle("dark-mode");
+    document.getElementById("firstDiv").style.backgroundColor = "white";
+    document.getElementById("firstDiv").style.color = "black";
+
+
+    /* if (Math.floor(Math.random() * 100) % 2 == 0) {
 
         // Changing firstDiv style
         document.getElementById("firstDiv").style.backgroundColor = "white";
@@ -21,10 +24,10 @@ function myFunction() {
 
         for (var i = 0; i < x.length; i++)
             x[i].style.color = "white";
-    }
+    } */
 }
 
-function stickyBar() {
+{
     // when scrolling, execute stickyBar
     window.onscroll = function () { stickyBar() };
 
@@ -35,10 +38,11 @@ function stickyBar() {
     var sticky = navbar.offsetTop;
 
     // add sticky class when reaching scroll position; else remove sticky class
-
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
+    function stickyBar() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
     }
 }
