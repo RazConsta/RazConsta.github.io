@@ -1,35 +1,28 @@
+/*      Contents:
+    1) Element Selectors.
+    2) Navigation Bar.
+    3) Class Selectors.
+    4) ID Selectors.
+
 /*-------------------------------------------------*/
-
-/*--------------------Name-based-------------------*/
-
+/*--------------- 1) Element Selectors ------------*/
 /*-------------------------------------------------*/
-
-div, h1, h4, p, ul, footer {
-    text-align: center;
-}
-
-body {
-    /* background-color: #333333; */
-    background-image: url(../images/seattle.jpg);
-    background-size: cover;
-    /* border-left: 10px solid;
-    border-right: 10px solid;
-    border-color: yellow; */
-    background-attachment: fixed;
-    /* color: white; */
-    margin: auto;
-}
 
 /* Fixing links for dark mode. */
-
 a {
     color: white;
     background-color: transparent;
     text-decoration: underline;
 }
 
-/* Dark mode and email buttons. */
+body {
+    background-image: url(../images/seattle.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
 
+/* Dark mode and email buttons. */
 button {
     background-color: yellow;
     border-color: yellow;
@@ -37,40 +30,23 @@ button {
     display: inline-block;
     padding: 2px 6px;
 }
+    /* No black button border when clicked or selected by tab. */
+    button:focus {
+        outline: none;
+    }
+
+/* Center all text. */
+div, footer, h1, h4, p, ul, {
+    text-align: center;
+}
 
 h1 {
     font-size: 30px;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-}
-
-button:focus {
-    outline: none;
-}
-
-/*
-@media screen and (max-width: 2560px) {
-    #firstDiv {
-        transform: scale(1.25);
-    }
-}
-
-@media screen and (max-width: 1920px) {
-    #firstDiv {
-        transform: scale(1);
-    }
-}
-
 /*---------------------------------------------------*/
-
-/*------------------Navigation bar-------------------*/
-
+/*-------------- 2) Navigation Bar ------------------*/
 /*---------------------------------------------------*/
-
-/* Navigation bar. */
 
 #navBar {
     background-color: blueviolet;
@@ -82,119 +58,86 @@ button:focus {
     position: sticky;
     top: 0;
     width: auto;
-    /* centers the bar */
 }
+    /* Special padding for logo in navbar. */
+    #navBarLogo {
+        padding: 3px 4px 2px 4px;
+    }
 
-/* Horizontal navbar elements.. */
-
+/* Horizontal navbar elements */
 .navItems {
     float: left;
 }
+    /* Links in navbar. */
+    .navItems a {
+        display: block;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 9px 15px;
+        text-align: center;
+        text-decoration: none;
+    }
 
-/* Used in sticky bar script. 
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-} 
-
-/* Padding to prevent quick movement. */
-
-.sticky+.content {
-    padding-top: 60px;
-}
-
-.navItems a {
-    display: block;
-    /* color: white; */
-    text-align: center;
-    padding: 9px 15px;
-    text-decoration: none;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-li a:active {
-    color: black;
-}
-
-/* When hovering a nabar item, 
-change text to black and background to yellow. */
-
-.navItems a:hover, .navItems a:active {
-    background-color: yellow;
-    color: black;
-}
-
+/* Highlight active page in navbar. */
 .active {
     background-color: yellow;
     color: black;
 }
 
 /*----------------------------------------------*/
-
-/*-------------------Classes--------------------*/
-
+/*------------ 3) Class Selectors --------------*/
 /*----------------------------------------------*/
 
-/* Select all element with the class name dark-mode
-that are descendents of the element with an ID of 
-firstDiv. */
-
-#firstDiv.dark-mode {
-    background-color: white;
-    color: black;
-}
-
-.dark-mode-links {
-    color: black;
-}
-
-.niceButton {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: blueviolet;
-    padding: 10px;
-    border: 2px solid #494949;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-}
-
-.niceButton:hover {
-    color: black;
-    background: yellow;
-    border-color: blueviolet;
-    transition: all 0.4s ease 0s;
-}
-
-/* Rounded border. */
-
-.border {
-    border: 3px solid;
-    border-radius: 20px;
-    margin: auto;
-    width: auto;
-}
-
+/* Center UWT image. */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.hidden {
-    display: none;
+/* Fix dark mode links in about and resume pages. */
+.dark-mode-links {
+    color: black;
 }
 
-/* Relevant courses list. */
+/* Align text to left. */
+.leftText {
+    text-align: left;
+}
+
+/* Dark mode and email buttons. */
+.niceButton {
+    background: blueviolet;
+    border: 3px solid yellow;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+    /* Switch colors when hovering dark mode and email. */
+    .niceButton:hover {
+        background: yellow;
+        border-color: blueviolet;
+        color: black;
+        transition: all 0.4s ease 0s;
+    }
+
+/* Resume boxes. */
+.resumeBorder {
+    border: 3px solid;
+    border-radius: 20px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: auto;
+}
 
 /*----------------------------------------------*/
-
-/*-----------------ID-based---------------------*/
-
+/*---------------- 4) ID Selectors -------------*/
 /*----------------------------------------------*/
 
+/* Child of body. */
 #firstDiv {
     background-color: #333333;
     color: white;
@@ -202,13 +145,24 @@ firstDiv. */
     max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
 }
+    /* Select all elements with the class name dark-mode
+    that are descendents of the element with an ID of 
+    firstDiv. */
+    #firstDiv.dark-mode {
+        background-color: white;
+        color: black;
+    }
 
-#borderedDiv {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+/* My profile pic on the home page. */
+#profilePic {
+    border-radius: 50%;
+    width: 200px;
+} 
 
-#navBarLogo {
-    padding: 3px 4px;
+/* UWT image on About page. */
+#uwPic {
+    height: auto;
+    max-width: 100%;
 }

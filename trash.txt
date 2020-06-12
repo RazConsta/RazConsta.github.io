@@ -1,0 +1,81 @@
+Contains deleted code that might be useful for future reference:
+----------------------------------------
+@media screen and (max-width: 2560px) {
+    #firstDiv {
+        transform: scale(1.25);
+    }
+}
+----------------------------------------
+@media screen and (max-width: 1920px) {
+    #firstDiv {
+        transform: scale(1);
+    }
+}
+----------------------------------------
+nav {
+    position: sticky;
+    top: 0;
+}
+----------------------------------------
+/* Fixing links for dark mode. */
+
+a {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+----------------------------------------
+.hidden {
+    display: none;
+}
+----------------------------------------
+/* random dark mode
+
+    if (Math.floor(Math.random() * 100) % 2 == 0) {
+
+        // Changing firstDiv style
+        document.getElementById("firstDiv").style.backgroundColor = "white";
+        document.getElementById("firstDiv").style.color = "black";
+
+        // Changing links color.
+        var x = document.getElementsByTagName("a");
+
+        for (var i = 0; i < x.length; i++)
+            x[i].style.color = "black";
+    }
+    else {
+        document.getElementById("firstDiv").style.backgroundColor = "#333333";
+        document.getElementById("firstDiv").style.color = "white";
+        var x = document.getElementsByTagName("a");
+
+        for (var i = 0; i < x.length; i++)
+            x[i].style.color = "white";
+    } 
+*/
+-----------------------------------------
+/* stickyBar 
+    // when scrolling, execute stickyBar
+    window.onscroll = function () { stickyBar() };
+
+    // get navbar
+    var navbar = document.getElementById("navBar");
+
+    // get the offset
+    var sticky = navbar.offsetTop;
+
+    // add sticky class when reaching scroll position; else remove sticky class
+    function stickyBar() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+*/
+
+
+
+
+
+
+

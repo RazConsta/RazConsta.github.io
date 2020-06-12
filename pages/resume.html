@@ -3,40 +3,31 @@
 
 <head>
     <title>Resume - Raz C Personal Website</title>
-
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Option to refresh for testing purposes.
-    <meta http-equiv="refresh" content="1">
-    -->
-
     <link rel="shortcut icon" href="images/favicon.ico" />
-
     <link rel="stylesheet" type="text/css" href="../main/style.css">
-
     <script src="../main/scripts.js"></script>
-
 </head>
 
 <body>
     <div id="firstDiv">
-
-        <nav>
             <ul id="navBar">
-                <li class="navItems"><a id="navBarLogo"><img src="../images/favicon.ico" width="30px" height="30px"></a>
+                <li class="navItems"><a id="navBarLogo">
+                        <img src="../images/favicon.ico" width="30px" height="30px"></a>
                 </li>
+
                 <li class="navItems"><a href="../index.html">Home</a></li>
                 <li class="navItems"><a href="about.html">About me</a></li>
                 <li class="navItems"><a href="projects.html">Personal Projects</a></li>
                 <li class="navItems"><a class="active" href="resume.html">Resume</a></li>
             </ul>
-        </nav>
 
         <p>Here is a pdf of my <a href="../resume.pdf" target="_blank">resume</a>.</p>
 
-        <div class="border" id="borderedDiv" style="text-align: left;">
+        <div class="resumeBorder">
             <h2>Education</h2>
-            <p style="text-align: left;">University of Washington Tacoma: BS CSS and Mathematics Minor<br>
+
+            <p class="leftText">University of Washington Tacoma: BS CSS and Mathematics Minor<br>
                 4.0 Cumulative GPA</p>
 
             <h4>Relevant courses I have taken:</h4>
@@ -50,10 +41,12 @@
 
         <br>
 
-        <div class="border" id="borderedDiv" style="text-align: left;">
+        <div class="resumeBorder">
             <h2>Experience</h2>
-            <p style="text-align: left;">ACCESS in STEM Scholar</p>
-            <p style="text-align: left;"> <br> Attended weekly “Achieving Change in our Communities for Equity and
+
+            <p class="leftText">ACCESS in STEM Scholar</p>
+
+            <p class="leftText"> <br> Attended weekly “Achieving Change in our Communities for Equity and
                 Student Success”
                 (ACCESS) meetings focused around faculty mentoring, skills workshops, and a focus group on
                 equity and inclusion in STEM to help develop a sense of community, identity, and empowerment.
@@ -62,9 +55,10 @@
 
         <br>
 
-        <div class="border" id="borderedDiv" style="text-align: left;">
+        <div class="resumeBorder">
             <h2>Languages</h2>
-            <ul style="text-align: left;">
+
+            <ul class="leftText">
                 <li>Java</li>
                 <li>C++</li>
                 <li>HTML/CSS/JS</li>
@@ -76,8 +70,7 @@
 
         <div>
             <a href="mailto:razvanc@uw.edu">
-                <button class="niceButton">Click here to send me an email.
-                </button>
+                <button class="niceButton">Click here to send me an email.</button>
             </a>
         </div>
 
@@ -86,7 +79,6 @@
         <footer>© 2020 Raz Consta</footer>
 
         <br>
-
     </div>
 </body>
 
