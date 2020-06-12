@@ -47,6 +47,10 @@ nav {
     top: 0;
 }
 
+button:focus {
+    outline: none;
+}
+
 /*
 @media screen and (max-width: 2560px) {
     #firstDiv {
@@ -127,27 +131,11 @@ change text to black and background to yellow. */
     color: black;
 }
 
-/*-----------------------------------------------*/
-
-/*------------------body div---------------------*/
-
-/*-----------------------------------------------*/
-
-#firstDiv {
-    background-color: #333333;
-    color: white;
-    margin: auto;
-    max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 /*----------------------------------------------*/
 
 /*-------------------Classes--------------------*/
 
 /*----------------------------------------------*/
-
 
 /* Select all element with the class name dark-mode
 that are descendents of the element with an ID of 
@@ -160,6 +148,24 @@ firstDiv. */
 
 .dark-mode-links {
     color: black;
+}
+
+.niceButton {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: blueviolet;
+    padding: 10px;
+    border: 2px solid #494949;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.niceButton:hover {
+    color: black;
+    background: yellow;
+    border-color: blueviolet;
+    transition: all 0.4s ease 0s;
 }
 
 /* Rounded border. */
