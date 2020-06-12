@@ -47,7 +47,7 @@ nav {
     top: 0;
 }
 
-
+/*
 @media screen and (max-width: 2560px) {
     #firstDiv {
         transform: scale(1.25);
@@ -148,7 +148,12 @@ change text to black and background to yellow. */
 
 /*----------------------------------------------*/
 
-.dark-mode {
+
+/* Select all element with the class name dark-mode
+that are descendents of the element with an ID of 
+firstDiv. */
+
+#firstDiv.dark-mode {
     background-color: white;
     color: black;
 }
