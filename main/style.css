@@ -12,14 +12,14 @@
 a {
     color: white;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
 body {
-    background-image: url(../images/seattle.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: auto;
+    background-image: url(../images/seattleFix.jpg);
+    background-attachment: fixed; /* image will not scroll */
+    background-size: cover; /* image covers entire body */
+    margin: auto; /* hug top of screen */
 }
 
 /* Dark mode and email buttons. */
@@ -36,7 +36,7 @@ button {
     }
 
 /* Center all text. */
-div, footer, h1, h4, p, ul, {
+div, footer, h1, h4, p, ul {
     text-align: center;
 }
 
@@ -51,15 +51,14 @@ h1 {
 #navBar {
     background-color: blueviolet;
     display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
+    list-style-type: none; /* no bullet points */
+    margin: 0; /* hug top of screen */
     padding: 0;
-    position: sticky;
+    position: sticky; /* sticks to top of screen */
     top: 0;
     width: auto;
 }
-    /* Special padding for logo in navbar. */
+    /* Special padding for logo in navbar */
     #navBarLogo {
         padding: 3px 4px 2px 4px;
     }
